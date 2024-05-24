@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "cherrymod",
+  "version": "${version}",
+  "name": "CherryMod",
+  "description": "",
+  "authors": [
+    "MoonWriters"
+  ],
+  "contact": {
+    "website": "https://moonwriters.eu/cherrymod",
+    "repo": "https://github.com/MoonWriters/CherryMod"
+  },
+  "license": "MIT",
+  "icon": "assets/cherrymod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "eu.moonwriters.cherrymod.client.CherryModClient"
+    ],
+    "main": [
+      "eu.moonwriters.cherrymod.CherryMod"
+    ]
+  },
+  "mixins": [
+    "cherrymod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
